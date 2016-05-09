@@ -53,9 +53,9 @@ execute homebrew_go do
   not_if { ::File.exist? '/usr/local/bin/brew' }
 end
 
-package 'git' do
-  not_if 'which git'
-end
+#package 'git' do
+#  not_if 'which git'
+#end
 
 homebrewalt_tap 'caskroom/cask'
 homebrewalt_tap 'caskroom/versions'
